@@ -19,18 +19,18 @@ This project is a web server like [nginx](https://nginx.org/en/). It is written 
 
 ### 📝 Config file options
 
-| Field                | Description                                                       | in location block | default value    |
-| -------------------- | ----------------------------------------------------------------- | ----------------- | ---------------- |
-| server_name          | The name of the server block                                      | ❌                | <need to be set> |
-| listen               | The port to listen on                                             | ❌                | 4242             |
-| location             | Define a location block for a particular URI                      | ❌                | <none>           |
-| root                 | The root directory of the website                                 | ✅                | "./www"          |
-| index                | The index file                                                    | ✅                | "index.html"     |
-| error_page           | Define a custom error page for a status code                      | ✅                | <default page>   |
-| client_max_body_size | The maximum size of a request body                                | ✅                | 1M               |
-| cgi                  | When enabled, it forwards requests to a CGI script for processing | ✅                | <none>           |
-| autoindex            | When enabled, it displays a directory listing                     | ✅                | false            |
-| accepted_methods     | Define the accepted HTTP methods for a location block             | ✅                | <none>           |
+| Field                | Description                                                       | in location block | default value |
+| -------------------- | ----------------------------------------------------------------- | ----------------- | ------------- |
+| server_name          | The name of the server block                                      | ❌                | needed        |
+| listen               | The port to listen on                                             | ❌                | 4242          |
+| location             | Define a location block for a particular URI                      | ❌                | none          |
+| root                 | The root directory of the website                                 | ✅                | "./www"       |
+| index                | The index file                                                    | ✅                | "index.html"  |
+| error_page           | Define a custom error page for a status code                      | ✅                | default page  |
+| client_max_body_size | The maximum size of a request body                                | ✅                | 1M            |
+| cgi                  | When enabled, it forwards requests to a CGI script for processing | ✅                | none          |
+| autoindex            | When enabled, it displays a directory listing                     | ✅                | false         |
+| accepted_methods     | Define the accepted HTTP methods for a location block             | ✅                | none          |
 
 If a field is not set in location block, it will be set for all the location blocks that don't have this field set.
 
