@@ -4,6 +4,8 @@
 
 - Result : 125/100 ✅
 
+![screen](https://i.imgur.com/v9L7au8.png)
+
 ## 📝 Description
 
 This project is a web server like [nginx](https://nginx.org/en/). It is written in C++ and use [epoll](https://en.wikipedia.org/wiki/Epoll) for asynchronous I/O. This project tries to implement the most common HTTP methods and headers in [HTTP/1.1](https://www.rfc-editor.org/rfc/rfc2616). It also implements a CGI (Common Gateway Interface) to execute scripts in a child process.
